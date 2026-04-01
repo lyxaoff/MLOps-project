@@ -12,6 +12,7 @@ Our product has multiple objectives and advantages:
 - We are able to group all the properties available even if they are registered at different real estate agencies.
 
 #**REPOSITORY STRUCTURE AND EXPLANATION**
+
 This project is structured  as a MLOps pipeline so the Training Lifecycle and Production Runtime are separated.
 Thus, we have the following files:
 - model_trainer.py: automates data ingestion from the Ames Housing Dataset, executes Pycaret's preprocessing pipelines and exports the best-performing LightGBM model.
@@ -25,6 +26,7 @@ Thus, we have the following files:
 Concerning the utilization of the product, it is solely based on the Ames Housing Dataset for the moment so it concerns only people looking for a property in Ames. The user has the possibility to add preferences such as a max price and a neighborhood to obtain the "Fair Value" of properties within their criterion.
 
 #**TECHNICAL ENVIRONMENT**
+
 To participate in the improvement of the product or run the engine locally:
 
 - Environment setup (install the necessary dependencies to ensure environment parity) : pip install -r requirements.txt
@@ -35,6 +37,7 @@ To participate in the improvement of the product or run the engine locally:
 - Open the API once launched: write http://127.0.0.1:8000/docs in your browser
 
 #**NEXT STEPS**
+
 In order to improve this product we can:
 - Integrate AI to monitor the live data coming into your API and compare it to the training data to keep the "Fair Value" estimations accurate.
 - To handle the high-traffic demands, move away from local execution by wrapping the files into Docker images and deploying containers via Kubernetes (K8s).
